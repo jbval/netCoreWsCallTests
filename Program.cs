@@ -27,7 +27,6 @@ namespace ConsoleApplication
             var settings = JsonConvert.DeserializeObject<ApplicationSettings>(strSettings);
             using (var client = new System.Net.Http.HttpClient())
             {
-
                 var msg = new Message
                 {
                     AuthorizationToken = settings.ApiKey,
